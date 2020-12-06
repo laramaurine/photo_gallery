@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GalleryItem from '../GalleryItem/GalleryItem'
 
 class GalleryList extends Component {
 
@@ -7,6 +8,7 @@ class GalleryList extends Component {
      
         <>
         <p>Hello from GalleryList</p>
+        <GalleryItem />
         </>
         )
     }
