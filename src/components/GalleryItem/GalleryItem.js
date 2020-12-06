@@ -5,7 +5,9 @@ class GalleryItem extends Component {
 
     render(){
         return(
+            <>
         <p>Hello from Gallery Item</p>
+            </>
         )
     }
 }
