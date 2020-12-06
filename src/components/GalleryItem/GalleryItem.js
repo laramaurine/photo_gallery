@@ -5,25 +5,27 @@ class GalleryItem extends Component {
     state = {
         desc: false,
     };
-    showDescription = () => {
+        showDescription = () => {
         this.setState({
-            desc: !this.state.desc,
+        desc: !this.state.desc,
         });
-    };
-
-    likePic = () => (event) => {
+        };
+        
+        likePic = () => (event) => {
         axios({
-            methid: 'PUT',
-            url: 'gallery/like' + this.props.pic.id,
+        method: 'PUT',
+        url: 'gallery/like/' + this.props.pic.id,
         })
         .then((response) => {
-            this.props.getGallery();
+       
+        this.props.getGallery();
         })
         .catch((error) => {
-            console.log('error in GalleryItem likePic', error);
-            alert('error in likes, no one likes')
-        })
-    }
+        console.log('error in itemjs like', error);
+        alert('error in likes no one likes');
+        });
+        }
+    
     render(){
         return(
             <>
