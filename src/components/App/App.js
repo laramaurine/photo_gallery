@@ -12,7 +12,7 @@ class App extends Component {
         <br/>
         <p>Gallery goes here</p>
         <GalleryList />
-        <img src="images/goat_small.jpg"/>
+        <img src="images/murder.jpg"/>
       </div>
     );
   }
